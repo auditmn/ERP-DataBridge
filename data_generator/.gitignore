@@ -1,0 +1,65 @@
+# ERP DataBridge
+# This file specifies intentionally untracked files to ignore when using Git.
+# For more information, please refer to https://git-scm.com/docs/gitignore.
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+env/
+venv/
+lib/
+log/
+bin/
+include/
+share/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Specific to ERP DataBridge
+# Logs
+*.log
+
+# Data files
+*.csv
+*.json
+*.xlsx
+*.xls
+*.db
+
+# Configuration files
+config.ini
+.env
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# Virtual environment
+/venv
+.venv/
+
+#Output Directory
+data/
