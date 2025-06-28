@@ -1,29 +1,55 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+
+# TypeScript compiled output
+/dist/
+/build/
+*.js
+*.js.map
+*.d.ts # Keep if you publish a library, otherwise exclude for applications
+*.tsbuildinfo
+
+# Editor/IDE specific files
+.vscode/        # VSCode settings (if you want to keep them local)
+.idea/          # IntelliJ/WebStorm
+*.swp           # Vim swap files
+*.bak           # Backup files
+*~              # Emacs backup files
+
+# OS generated files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db
+.directory
+
+# Environment variables
+.env
+.env.*
+!.env.example # Keep if you provide an example .env file
+.env.production.local # Example specific .env files
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 
+# Test coverage
+/coverage
+.nyc_output
+
 # Dependencies
-node_modules/
+# Should be in node_modules, but just in case
+package-lock.json   # Usually committed, but sometimes excluded in specific workflows
+yarn.lock           # Usually committed, but sometimes excluded
+pnpm-lock.yaml      # Usually committed, but sometimes excluded
 
-# Coverage
-coverage
-
-# Transpiled files
-build/
-
-# VS Code
-.vscode
-!.vscode/tasks.js
-
-# JetBrains IDEs
-.idea/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Misc
-.DS_Store
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock

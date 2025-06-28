@@ -1,23 +1,16 @@
+// tsconfig.json
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "node16",
-    "lib": ["ES2022", "DOM"],
-    "moduleResolution": "node16",
-    "rootDir": ".",
-    "outDir": "build",
-    "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
-    "alwaysStrict": true,
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false,
+    "target": "esnext",                // Or a newer version like "es2023", "esnext"
+    "module": "esnext",              // Or "node16", "nodenext" for ESM in Node.js
+    "outDir": "./dist",                // Where compiled JS goes
+    "rootDir": "./src",                // Where your TS source code lives
+    "strict": true,                    // Enable all strict type-checking options
+    "esModuleInterop": true,           // Important for mixed ES Module/CommonJS imports
+    "skipLibCheck": true,              // Skip type checking of all declaration files (*.d.ts)
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file casing
+    "sourceMap": true                  // Generate source maps for debugging
   },
-  "include": ["src", "__tests__"]
+  "include": ["src/**/*.ts"],          // Only include files in the src directory
+  "exclude": ["node_modules", "dist"]  // Exclude these directories from compilation
 }
