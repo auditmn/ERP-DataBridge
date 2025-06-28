@@ -75,3 +75,6 @@ Thumbs.db
 
 # Sample
 demo/
+
+# Cache
+file_index.db
